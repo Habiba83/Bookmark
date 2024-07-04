@@ -1,0 +1,148 @@
+div.foo {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 60px;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+    display: block;
+    text-align: center;
+}
+body {
+    background-color: #F7ECDE;
+}
+p {
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    background: linear-gradient(#3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-bookmark {
+    background: linear-gradient(#3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.InputHead {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.ph {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.sbutton {
+    background-color: #d1512d;
+    width: 150px;
+    height: 35px;
+    color: white;
+    border-color: transparent;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: color 0.15s ease-in-out;
+}
+.sbutton:hover {
+    background-color: #a03315;
+}
+.dotted-line {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: none;
+    border-bottom: 2px dotted rgb(33, 37, 41);
+    padding: 20px 0;
+    position: relative;
+}
+.cbutton {
+    background-color: #9eb23b;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-color: transparent;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: color 0.7s ease-in-out;
+}
+.cbutton:hover {
+    background-color: #6e8018;
+}
+.dbutton {
+    background-color: red;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-color: transparent;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: color 0.7s ease-in-out;
+}
+.dbutton:hover {
+    background-color: #eb1d36;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    margin: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    position: relative; 
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.modal-content p {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    text-align: left; 
+}
+
+.modal-content ul {
+    padding: 0; 
+    text-align: left;
+}
+
+.modal-content li {
+    font-size: 12px; 
+    margin-bottom: 5px; 
+}
+
+.close {
+    color: #aaa;
+    position: absolute; 
+    top: -10px;
+    right: 10px; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

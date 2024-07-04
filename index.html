@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark</title>
+    <link rel="icon" href="bookmark.png" type="image/png">
+    <script src="https://kit.fontawesome.com/5a92832f3d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div>
+            <div class="foo mx-auto">Bookmarker</div>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="my-4">
+            <div class="text-center">
+                <p>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>Bookmark your favorite sites</span>
+                    <i class="fa-solid fa-bookmark"></i>
+                </p>
+            </div>
+        </div>
+        <div class="mb-5">
+            <div>
+                <div class="p-2">
+                    <div class="mb-2 InputHead">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        Site Name
+                    </div>
+                    <input class="form-control ph" id="SiteName" type="text" placeholder="Bookmark Name" aria-label="default input example">
+                </div>
+                <div class="p-2 mt-2">
+                    <div class="mb-2 InputHead">
+                        <i class="fa-solid fa-link"></i>
+                        Site URL
+                    </div>
+                    <input class="form-control ph" type="text" id="SiteURL" placeholder="Website URL" aria-label="default input example">
+                </div>
+            </div>
+            <div class="text-center">
+                <div>
+                    <button onclick="addSiteinfo()" class="sbutton rounded-2 mt-3">Submit</button>
+                </div>
+                <div class="dotted-line"></div>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead class="text-center">
+                <tr>
+                    <th>Index</th>
+                    <th>Site Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody" class="text-center">
+            </tbody>
+        </table>
+    </div>
+    <div id="errorModal" class="modal m-auto">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Site Name or URL is not valid. Please follow the rules below:</p>
+            <ul id="errorList" class="text-start"></ul>
+        </div>
+    </div>
+
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
+</html>
+
